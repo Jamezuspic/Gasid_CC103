@@ -2,8 +2,29 @@ body{
     background-color: rgb(66, 76, 92);
 }
 
+@media (max-width: 768px) {
+    .about-container {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .image {
+        height: 250px;
+    }
+
+    .nav-bar ul {
+      display:flex;
+      flex-wrap: wrap;
+      
+      gap:50px;
+      justify-content: center;
+    }
+
+    
+}
+
 header{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size:large;
     color:black;
     margin-top:20px;
@@ -17,7 +38,7 @@ header{
 }
 
 h1{
-    font-family:'Courier New', Courier, monospace;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size:xx-large;
     color:rgb(0, 0, 0);
     margin:0;
@@ -86,13 +107,17 @@ h1{
   background-color: rgb(56, 101, 247);
   border-radius: 8px;
   margin-top: 1rem;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  font-weight: bold;
 
   
 }
 
 .nav-bar ul {
   display: flex;
-  gap: 8rem;
+  gap: 2rem;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -100,14 +125,19 @@ h1{
 }
 
 .nav-bar a {
+  color: white;
   text-decoration: none;
-  color: #f0f0f0;
-  font-weight: bold;
-  font-size: 1rem;
+  font-size: medium;
+  transition: box-shadow 0.3s ease;
+  padding: 0.5rem 1rem;
+  opacity: 0.9;
+
 }
 
 .nav-bar a:hover {
-  color: #00b7ff;
+  box-shadow: 0 0 15px 5px white;
+  border-radius:5px;
+  background-color: #00b7ff;
 }
 
 
@@ -130,8 +160,7 @@ h1{
 }
 
 .Subjects ul{
-  line-height: 2rem;
+  line-height: 3rem;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 1rem;
-}
-
+} 
